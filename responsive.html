@@ -7,11 +7,14 @@
     <style type="text/css">
     @media only screen and (max-width: 600px){
         .wrapper-inner { width: 100% !important; margin: 0; }
-        .content { --webkit-text-size-adjust: none; font-size: 15px; margin: 15px !important; width: auto !important;}
+        .content { --webkit-text-size-adjust: none; font-size: 15px; margin: 15px !important; width: auto !important; }
+        .td-padding { width: 0 !important; }
         .footer a { font-size: 14px !important; line-height: 1 !important; display: block;  }
         .section-border { width: 100% !important;}
         p { margin-bottom: 1em; }
         
+        /* Hide .spacers on mobile devices */
+        .spacer { display: none; }
         }
     </style>
     
@@ -21,25 +24,28 @@
     html, body { margin: 0; padding: 0; }
     body { font-family:sans-serif; line-height:1.4; font-size: 15px; }
     a { color: #0072bb; text-decoration: none; font-weight: bold;}
-    a:hover { color: ;}
+    /* Don't forget to set a hover color! */
+    /*a:hover { color: ;}*/
+    img { outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; }
     a img { display:block; border: none; }
     
     .wrapper { width: 100%; background: #ffffff; margin: 0; padding: 0; }
     .wrapper-inner { width: 600px; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; }
     
-    .header, .footer {  background: #dadada; padding: 20px;}
+    /*Don't forget to set the bgcolor attributes on .header and .footer!*/
+    .header, .footer {  background: #dadada; padding: 20px; width: 560px;}
     .header a{  display: block; margin-top: 0; margin-bottom: 0; width: auto; padding: 0; }
     .header a img { display: block; }
     
     .content {  margin-left: 20px; margin-right: 20px; width: 560px; }
     .content img { max-width: 100%; }
-
-    .footer a { display: block; text-decoration: underline; font-size: 85%;  font-weight: normal; padding-left: 5%; padding-right: 5%; }
+    .spacer { padding-top: 8px; padding-bottom: 7px; line-height: 0;}
+    .footer a { display: block; text-decoration: underline; font-size: 12px;  font-weight: normal; padding-left: 5%; padding-right: 5%; }
     
 
 
     </style>
-    <table class="wrapper" cellpadding="0" cellspacing="0">
+    <table class="wrapper" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td>
                 <table class="wrapper-inner" cellpadding="0" cellspacing="0" align="center" width="600">
@@ -49,8 +55,11 @@
                         </td> <!-- /.header -->
                     </tr>
                     <tr>
+                        <td class="spacer">&nbsp;</td>
+                    </tr>
+                    
+                    <tr>
                         <td>
-                            <br />
                             <div class="content">
                                 <p>Hello,</p>
 
@@ -62,8 +71,10 @@
                                 <p><a href="#">Take action today</a></p>
                                 <p>Vestibulum facilisis tellus feugiat metus bibendum porttitor. Pellentesque ut urna sem, nec porta mauris. Fusce sodales tincidunt tellus sit amet suscipit. Donec tempus, mi ac vehicula tristique, quam libero dignissim mi, gravida euismod tortor est adipiscing enim.</p>
                             </div> <!-- /.content -->
-                            <br />
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="spacer">&nbsp;</td>
                     </tr>
                     <tr>
                         <td bgcolor="#f5f5f5"  class="footer">
