@@ -22,11 +22,29 @@
             padding-top: 1em;
             padding-bottom: 1em;
         }
-
-        .footer a {
-            font-size: 14px !important;
-            line-height: 1 !important;
+        .footer {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+        .footer .unsub {
+            width: 70% !important;
+        }
+        .footer .social {
+            width: 15% !important;
+        }
+        .footer .social a {
+            padding: 1em;
             display: block;
+            
+        }
+        .footer .social a img {
+            display: block;
+            margin: 0 auto;
+        }
+        .footer p {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+            padding-left: 3%;
         }
 
         
@@ -62,24 +80,24 @@
 </head>
 <body style="min-width: 100%; font-family: sans-serif; line-height: 1.4; font-size: 15px; background-color: #ccccff; margin: 0; padding: 0;" bgcolor="#ccccff">
     
-    <table class="wrapper" cellspacing="0" border="0" bgcolor="#cccccc" width="100%" cellpadding="0" style="margin: 0; background-color: #cccccc; padding: 0; width: 100%;">
+    <table class="wrapper" cellspacing="0" bgcolor="#cccccc" width="100%" cellpadding="0" style="margin: 0; background-color: #cccccc; padding: 0; width: 100%;">
         <tr>
             <td style="border-collapse: collapse;">
-                <table class="wrapper-inner" cellspacing="0" border="0" align="center" bgcolor="#aaffff" width="600" cellpadding="0" style="width: 600px; background-color: #ffffff; margin: 0 auto;">
+                <table class="wrapper-inner" cellspacing="0" align="center" bgcolor="#aaffff" width="600" cellpadding="0" style="width: 600px; background-color: #ffffff; margin: 0 auto;">
                     <tr>
                         <td class="header" bgcolor="#f5f5f5" style="border-collapse: collapse; width: 100%;">
                                 <a href="#" style="margin-bottom: 0; font-weight: bold; margin-top: 0; padding: 0; text-decoration: none; color: #0072bb; display: block; width: auto;"><img src="http://placekitten.com/600/150" alt="alt attribute" style="outline: none; border: 0 none; text-decoration: none; display: block; -ms-interpolation-mode: bicubic;" /></a>
                         </td> <!-- /.header -->
                     </tr>
                     <tr>
-                        <td class="spacer" style="border-collapse: collapse; line-height: 0; padding-top: 8px; padding-bottom: 7px;">&nbsp;</td>
+                        <td class="spacer" bgcolor="#ffffff" style="border-collapse: collapse; line-height: 0; padding-top: 8px; padding-bottom: 7px;">&nbsp;</td>
                     </tr>
                     
                     <tr>
                         <td style="border-collapse: collapse;">
-                            <table cellspacing="0" border="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                            <table cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
                                 <tr>
-                                    <td class="gutter" width="20" style="border-collapse: collapse;">&nbsp;</td>
+                                    <td class="gutter" bgcolor="#ffffff" width="20" style="border-collapse: collapse;">&nbsp;</td>
                                     <td class="content" width="560" style="border-collapse: collapse; margin-left: 20px; margin-right: 20px; width: 560px;">
 
                                 <p>Hello,</p>
@@ -92,19 +110,32 @@
                                 <p><a href="#" style="color: #0072bb; text-decoration: none; font-weight: bold;">Take action today</a></p>
                                 <p>Vestibulum facilisis tellus feugiat metus bibendum porttitor. Pellentesque ut urna sem, nec porta mauris. Fusce sodales tincidunt tellus sit amet suscipit. Donec tempus, mi ac vehicula tristique, quam libero dignissim mi, gravida euismod tortor est adipiscing enim.</p>
                             </td> <!-- /.content -->
-                            <td class="gutter" width="20" style="border-collapse: collapse;"> &nbsp; </td>
+                            <td class="gutter" width="20" bgcolor="#ffffff" style="border-collapse: collapse;"> &nbsp; </td>
                             </tr>
                             </table>
 
                         </td>
                     </tr>
                     <tr>
-                        <td class="spacer" style="border-collapse: collapse; line-height: 0; padding-top: 8px; padding-bottom: 7px;">&nbsp;</td>
+                        <td class="spacer" bgcolor="#ffffff" style="border-collapse: collapse; line-height: 0; padding-top: 8px; padding-bottom: 7px;">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="footer" bgcolor="#f5f5f5" style="border-collapse: collapse; background-color: #dadada; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; width: 560px;">
-                                <a href="%%UNSUBSCRIBE%%" style="padding-right: 5%; font-size: 12px; font-weight: normal; text-decoration: underline; color: #0072bb; display: block; padding-left: 5%;">Unsubscribe</a>
-                        </td> <!-- /.footer -->
+                        <td style="border-collapse: collapse;">
+                            <table class="footer" cellspacing="0" border="0" height="30" width="600" bgcolor="#f5f5f5" cellpadding="0" style="background-color: #dadada; padding: 0; width: 600px; height: 55px;">
+                                <tr>
+                                    <td class="gutter" width="20" bgcolor="#f5f5f5" style="border-collapse: collapse;">&nbsp;</td>
+                                    <td class="unsub" width="500" bgcolor="#f5f5f5" style="border-collapse: collapse;">
+                                            <p style="line-height: 1.4;"><a href="%%UNSUBSCRIBE%%" style="font-size: 12px; font-weight: normal; text-decoration: underline; color: #0072bb;">Unsubscribe</a></p>
+                                    </td> <!-- /.footer -->
+                                    <td class="social" width="40" bgcolor="#f5f5f5" style="border-collapse: collapse;">
+                                        <a href="http://facebook.com" style="font-size: 12px; font-weight: normal; text-decoration: underline; color: #0072bb;"><img src="http://dl.dropbox.com/u/14236910/fb.jpg" height="16" alt="" width="16" style="outline: none; border: none; text-decoration: none; display: block; -ms-interpolation-mode: bicubic;" /></a>
+                                    </td>
+                                    <td class="social" width="40" bgcolor="#f5f5f5" style="border-collapse: collapse;">
+                                        <a href="http://twitter.com" style="font-size: 12px; font-weight: normal; text-decoration: underline; color: #0072bb;"><img src="http://dl.dropbox.com/u/14236910/tw.jpg" height="16" alt="" width="16" style="outline: none; border: none; text-decoration: none; display: block; -ms-interpolation-mode: bicubic;" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                 </table> <!-- /.wrapper-inner -->
             </td>
