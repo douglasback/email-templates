@@ -26,11 +26,29 @@
             padding-top: 1em;
             padding-bottom: 1em;
         }
-
-        .footer a {
-            font-size: 14px !important;
-            line-height: 1 !important;
+        .footer {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+        .footer .unsub {
+            width: 70% !important;
+        }
+        .footer .social {
+            width: 15% !important;
+        }
+        .footer .social a {
+            padding: 1em;
             display: block;
+            
+        }
+        .footer .social a img {
+            display: block;
+            margin: 0 auto;
+        }
+        .footer p {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+            padding-left: 3%;
         }
 
         
@@ -126,15 +144,6 @@
         outline: none;
         border: 0;
     }
-    .footer {
-        background: #dadada;
-        padding: 20px;
-        width: 560px;
-    }
-
-
-    
-
     .content {
         margin-left: 20px;
         margin-right: 20px;
@@ -144,14 +153,20 @@
     .content img {
         max-width: 100%;
     }
-
+    .footer {
+        background: #dadada;
+        padding: 0;
+        width: 600px;
+        height: 55px;
+    }
+    .footer p {
+        line-height: 1.4;
+    }
     .footer a {
-        display: block;
         text-decoration: underline;
         font-size: 12px;
         font-weight: normal;
-        padding-left: 5%;
-        padding-right: 5%;
+        
     }
 
     .spacer {
@@ -176,14 +191,14 @@
                         </td> <!-- /.header -->
                     </tr>
                     <tr>
-                        <td class="spacer">&nbsp;</td>
+                        <td class="spacer" bgcolor="#ffffff" >&nbsp;</td>
                     </tr>
                     
                     <tr>
                         <td>
                             <table cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
                                 <tr>
-                                    <td width="20" class="gutter">&nbsp;</td>
+                                    <td width="20" class="gutter" bgcolor="#ffffff">&nbsp;</td>
                                     <td width="560" class="content">
 
                                 <p>Hello,</p>
@@ -196,19 +211,32 @@
                                 <p><a href="#">Take action today</a></p>
                                 <p>Vestibulum facilisis tellus feugiat metus bibendum porttitor. Pellentesque ut urna sem, nec porta mauris. Fusce sodales tincidunt tellus sit amet suscipit. Donec tempus, mi ac vehicula tristique, quam libero dignissim mi, gravida euismod tortor est adipiscing enim.</p>
                             </td> <!-- /.content -->
-                            <td class="gutter" width="20"> &nbsp; </td>
+                            <td class="gutter" bgcolor="#ffffff" width="20"> &nbsp; </td>
                             </tr>
                             </table>
 
                         </td>
                     </tr>
                     <tr>
-                        <td class="spacer">&nbsp;</td>
+                        <td class="spacer" bgcolor="#ffffff" >&nbsp;</td>
                     </tr>
                     <tr>
-                        <td bgcolor="#f5f5f5"  class="footer">
-                                <a href="%%UNSUBSCRIBE%%">Unsubscribe</a>
-                        </td> <!-- /.footer -->
+                        <td>
+                            <table class="footer" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5" width="600" height="30">
+                                <tr>
+                                    <td class="gutter" bgcolor="#f5f5f5" width="20">&nbsp;</td>
+                                    <td class="unsub" bgcolor="#f5f5f5" width="500">
+                                            <p><a href="%%UNSUBSCRIBE%%">Unsubscribe</a></p>
+                                    </td> <!-- /.footer -->
+                                    <td bgcolor="#f5f5f5" class="social" width="40">
+                                        <a href="http://facebook.com"><img src="http://dl.dropbox.com/u/14236910/fb.jpg" height="16" width="16" alt="" /></a>
+                                    </td>
+                                    <td bgcolor="#f5f5f5" class="social" width="40">
+                                        <a href="http://twitter.com"><img src="http://dl.dropbox.com/u/14236910/tw.jpg" height="16" width="16" alt="" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                 </table> <!-- /.wrapper-inner -->
             </td>
