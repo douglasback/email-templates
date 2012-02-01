@@ -1,18 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <title>Responsive Email Boilerplate - With Comments</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- Sets the Viewport to the width of the device — don't disable zooming! -->
     <meta name="viewport" content="width=device-width" />
-    <title></title>
+    
+    <!-- =========================== -->
+    <!-- = Media Query Style Block = -->
+    <!-- =========================== -->
+    <!-- ...and other styles that don't need to be inlined
+        i.e. bug fixes for clients that read embedded stylesheets. -->
     <style type="text/css">
     @media only screen and (max-width: 600px){
         
         .wrapper-inner {
-            width: 100% !important;
+            width: 100% !important; /* Using !important overrides width attributes on tables */
             margin: 0 !important;
             padding: 0 !important;
-            -webkit-text-size-adjust: none;
-            
+            -webkit-text-size-adjust: none; /*Use this with caution — 
+                                            make sure the font size you use 
+                                            is readable on iPhones */ 
         }
         img { 
             max-width: 100%; /* Keep images from overflowing the viewport */
@@ -20,7 +29,7 @@
         }
         
         .content { 
-            font-size: 15px;
+            font-size: 15px;  /*<-- Sets the font-size for the email */
             padding-top: 1em;
             padding-bottom: 1em;
         }
@@ -114,7 +123,7 @@
 
     .wrapper {
         width: 100%;
-        background: #cccccc;
+        background: #aaaaaa;
         margin: 0;
         padding: 0;
     }
@@ -183,7 +192,7 @@
     table td { border-collapse: collapse; }
 
     </style>
-    <table class="wrapper" cellpadding="0" cellspacing="0" width="100%" bgcolor="#cccccc">
+    <table class="wrapper" cellpadding="0" cellspacing="0" width="100%" bgcolor="#aaaaaa">
         <tr>
             <td>
                 <table class="wrapper-inner" cellpadding="0" cellspacing="0" align="center" width="600" bgcolor="#aaffff">
@@ -208,7 +217,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 <p>Integer consequat tristique ipsum sed pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed posuere, elit ac mollis fermentum, leo metus vulputate mauris, eu ultrices orci nisi eget neque.</p>
                                 <p>Integer vel vulputate elit. Praesent sapien nulla, volutpat id rhoncus vel, mollis sit amet velit. Vestibulum sit amet tempus ante. Ut ligula sem, fringilla non mollis lobortis, lacinia eu lorem. Integer mollis porta cursus.</p>
-                                <a class="button" href="#" style="display: block; padding: 15px 0;"><img alt="" border="0"  width="540" height="200" src="http://placehold.it/540x200" style="display: block;" /></a>
+                                <a class="button" href="#" style="display: block; padding: 15px 0;"><img alt="" border="0"  width="560" height="200" src="http://placehold.it/560x200" style="display: block;" /></a>
                                 <p>Morbi rutrum elit eros, a consequat odio:</p>
                                 <p><a href="#">Take action today</a></p>
                                 <p>Vestibulum facilisis tellus feugiat metus bibendum porttitor. Pellentesque ut urna sem, nec porta mauris. Fusce sodales tincidunt tellus sit amet suscipit. Donec tempus, mi ac vehicula tristique, quam libero dignissim mi, gravida euismod tortor est adipiscing enim.</p>
