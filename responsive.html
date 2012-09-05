@@ -15,47 +15,48 @@
     <style type="text/css">
     @media only screen and (max-width: 600px){
         
-        .wrapper-inner {
+        body[yahoofix] .wrapper-inner {
             width: 100% !important; /* Using !important overrides width attributes on tables */
             margin: 0 !important;
             padding: 0 !important;
             -webkit-text-size-adjust: none; /*Use this with caution — make sure the font size you use is readable on iPhones */ 
         }
-        img { 
+        body[yahoofix] img { 
             max-width: 100%; /* Keep images from overflowing the viewport */
             height: auto !important; /* Override height attribute */
         }
         
-        .content { 
+        body[yahoofix] .content { 
             font-size: 15px;  /* Sets the font-size for the email */
             padding-top: 1em;
             padding-bottom: 1em;
+            margin: 0 20px;
         }
-        .footer {
+        body[yahoofix] .footer {
             width: 100% !important;
             padding: 0 !important;
         }
-        .footer .unsub {
+        body[yahoofix] .footer .unsub {
             width: 70% !important;
         }
-        .footer .social {
+        body[yahoofix] .footer .social {
             width: 15% !important;
         }
-        .footer .social a {
+        body[yahoofix] .footer .social a {
             padding: .5em;
             display: block;
             
         }
-        .footer .social a img {
+        body[yahoofix] .footer .social a img {
             display: block;
             margin: 0 auto;
         }
-        .footer p {
+        body[yahoofix] .footer p {
             font-size: 12px !important;
             line-height: 1.4 !important;
             padding-left: 3%;
         }
-        .spacer { /* Hide vertical .spacer <td> els on mobile devices */
+        body[yahoofix] .spacer { /* Hide vertical .spacer <td> els on mobile devices */
             display: none;
         }
     }
@@ -63,25 +64,25 @@
         /* ============================================== */
         /* = Hide half-width buttons on small viewports = */
         /* ============================================== */
-        .footer p {
+        body[yahoofix] .footer p {
             padding-left: 0;
             text-align: center;
         }
-        .footer td {
+        body[yahoofix] .footer td {
             display: block !important;
         }
-        .footer .unsub {
+        body[yahoofix] .footer .unsub {
             width: 100% !important;
         }
-        .footer .gutter {
+        body[yahoofix] .footer .gutter {
             display: none !important;
         }
-        .footer .social {
+        body[yahoofix] .footer .social {
             width: 50% !important;
             float: left;
             text-align: center;
         }
-        .half-width-button { 
+        body[yahoofix] .half-width-button { 
             display: none !important;
             height: 0 !important;
             width: 0 !important;
@@ -104,7 +105,7 @@
     </style>
     
 </head>
-<body>
+<body yahoofix="fix">
     <style type="text/css">
     body {
         min-width: 100%;
@@ -170,8 +171,6 @@
         border: 0;
     }
     .content {
-        margin-left: 20px;
-        margin-right: 20px;
         width: 560px;
     }
 
