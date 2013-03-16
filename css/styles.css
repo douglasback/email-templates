@@ -1,0 +1,99 @@
+/* ==================================== */
+/* = This stylesheet will get inlined = */
+/* ==================================== */
+body {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size: 15px;
+    background: #ffffff;
+}
+a {
+    color: #0072bb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Don't forget to set a hover color! */
+a:hover { color: #0072bb;}
+
+img {
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+a img {
+    display: block;
+    border: none;
+}
+
+.wrapper {
+    width: 100%;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-inner {
+    width: 600px;
+    background: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header a {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
+}
+
+.header a img {
+    display: block;
+    outline: none;
+    border: 0;
+}
+.content {
+    width: 560px;
+}
+
+.content img {
+    max-width: 100%;
+}
+.footer {
+    background: #ffffff;
+    padding: 0;
+    width: 600px;
+    height: 55px;
+}
+.footer p {
+    line-height: 1.4;
+    font-size: 12px;
+    
+}
+.footer a {
+    text-decoration: underline;
+    font-weight: normal;
+    
+}
+
+.spacer {
+    padding-top: 8px;
+    padding-bottom: 7px;
+    line-height: 0;
+}
+
+/* =========================== */
+/* = Outlook 2007/2010 Fixes = */
+/* =========================== */
+table td { border-collapse: collapse; }

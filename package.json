@@ -1,0 +1,9 @@
+{
+  "name": "email-templates",
+  "description": "Fucking email templates. Done right.",
+  "author": "Douglas Back <douglasback@gmail.com>",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "juice": "~0.2.0"
+  }
+}
