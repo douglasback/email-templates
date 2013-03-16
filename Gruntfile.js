@@ -1,19 +1,39 @@
 module.exports = function(grunt) {
     
     var juice = require("juice"),
-        jsdom = require("jsdom");
+        jsdom = require("jsdom").jsdom;
         
     // Project configuration.
     grunt.initConfig({
         // Metadata.
         pkg: grunt.file.readJSON('package.json'),
-
+        htmlmin: {
+            options: {
+                removeComments: true
+            },
+            dist : {
+                files: {
+                    'inline.min.html' : 'inline.html'
+                }
+            }
+        },
+        cssmin: {
+            options: {
+                
+            },
+            dist: {
+                files: {
+                    'css/media-queries.min.css' : 'css/media-queries.css'
+                }
+            }
+        }
     });
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task.
     grunt.registerTask('inline', 
@@ -25,10 +45,22 @@ module.exports = function(grunt) {
                         applyLinkTags: true,
                         removeStyleTags: false,
                         removeLinkTags: true
-                    }
+                    };
+
+                grunt.task.run("cssmin");
+
                 juice("responsive.html", options, function(err, html) {
-                  grunt.file.write("inline.html", html);
-                  complete(err);
+                    var reg = /\@import url\('(.*)'\)/,
+                        mq = html.match(reg)[1],
+                        mqLoaded = grunt.file.read(mq);
+                    grunt.log.verbose.writeln("External CSS loc: " + mq);
+                    
+                    var embedded = html.replace(reg, mqLoaded);
+                    grunt.log.verbose.writeln(embedded);
+                    grunt.file.write("inline.html", embedded);
+                    grunt.task.run("htmlmin");
+
+                    complete(err);
                 });
     });
 };
