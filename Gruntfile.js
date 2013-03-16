@@ -52,14 +52,11 @@ module.exports = function(grunt) {
                 juice("responsive.html", options, function(err, html) {
                     var reg = /\@import url\('(.*)'\)/,
                         mq = html.match(reg)[1],
-                        mqLoaded = grunt.file.read(mq);
+                        mqLoaded = grunt.file.read(mq),
+                        embedded = html.replace(reg, mqLoaded);
                     grunt.log.verbose.writeln("External CSS loc: " + mq);
-                    
-                    var embedded = html.replace(reg, mqLoaded);
-                    grunt.log.verbose.writeln(embedded);
                     grunt.file.write("inline.html", embedded);
                     grunt.task.run("htmlmin");
-
                     complete(err);
                 });
     });
