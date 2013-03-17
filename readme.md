@@ -1,5 +1,11 @@
 #Email Template Boilerplate
 
+##tl;dr
+
+1. Use `responsive.html` to create your email
+2. Use `grunt inline` to inline your stylesheet
+3. Your final email is at `inline.min.html`
+
 ##Usage
 
 1. Download this repo
@@ -13,5 +19,6 @@
 5. Your final email will be created at `inline.min.html`. Use this to create your header and footer wrappers.
 
 ##Known issues:
+
 - Juice doesn't add `width` attributes to `<table>` and `<td>` elements; this means Lotus 6.5 and 7 will not render the email correctly.
 - Outlook 2007/2010 has awful support for font styles. Currently, their default email font is used to render the email.
