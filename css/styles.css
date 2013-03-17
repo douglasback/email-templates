@@ -68,6 +68,7 @@ a img {
 }
 .content {
     width: 560px;
+    font-family: sans-serif;
 }
 
 .content img {
