@@ -3,7 +3,8 @@
 ##tl;dr
 
 1. Use `responsive.html` to create your email
-2. Use `grunt inline` to inline your stylesheet
+2. Put your styles in `css/styles.css` and `styles/media-queries.css`
+2. Use `grunt inline` to inline your stylesheet and embed the media query
 3. Your final email is at `dist/inline.min.html`
 
 ##Usage
