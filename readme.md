@@ -21,4 +21,5 @@
 ##Known issues:
 
 - Juice doesn't add `width` attributes to `<table>` and `<td>` elements; this means Lotus 6.5 and 7 will not render the email correctly.
+    - The workaround: add width attributes to `inline.min.html` where needed.
 - Outlook 2007/2010 has awful support for font styles. Currently, their default email font is used to render the email.
