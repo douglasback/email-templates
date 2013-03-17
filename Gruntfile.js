@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             },
             dist : {
                 files: {
-                    'inline.min.html' : 'inline.html'
+                    'dist/inline.min.html' : 'dist/inline.html'
                 }
             }
         },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
                         mqLoaded = grunt.file.read(mq),
                         embedded = html.replace(reg, mqLoaded);
                     grunt.log.verbose.writeln("External CSS loc: " + mq);
-                    grunt.file.write("inline.html", embedded);
+                    grunt.file.write("dist/inline.html", embedded);
                     grunt.task.run("htmlmin");
                     complete(err);
                 });

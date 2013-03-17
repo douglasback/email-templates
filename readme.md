@@ -4,7 +4,7 @@
 
 1. Use `responsive.html` to create your email
 2. Use `grunt inline` to inline your stylesheet
-3. Your final email is at `inline.min.html`
+3. Your final email is at `dist/inline.min.html`
 
 ##Usage
 
@@ -16,7 +16,7 @@
     - `css/media-queries.css`: The mobile stylesheet for the email
     - Leave `media-queries.min.css` alone — Grunt will recompile it.
 4. When you're done creating your email, run `grunt inline` to put all of the appropriate CSS inline, and embed the media query stylesheet in the `<head>`.
-5. Your final email will be created at `inline.min.html`. Use this to create your header and footer wrappers.
+5. Your final email will be created at `dist/inline.min.html`. Use this to create your header and footer wrappers.
 
 ##Known issues:
 
